@@ -12,7 +12,7 @@ class LoginMainWindow(QMainWindow, Ui_Form):
         super().__init__()
         self.setupUi(self)
         print("hhhhh")
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture('./1.mp4')
         flag, image = self.cap.read()
         print(flag)
         # 加载训练数据集文件
